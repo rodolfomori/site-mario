@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
 }
 
 
@@ -61,4 +62,44 @@ button {
     color: #fff;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.fale-conosco {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    position: fixed;
+    left: -320px;
+    transition: left 1s linear;
+    z-index: 4;
+}
+
+input {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    outline-color: chartreuse;
+}
+
+textarea {
+    height: 90px;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 10px;
+    outline-color: chartreuse;
+}
+
+.mascara-form {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
